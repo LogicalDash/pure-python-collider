@@ -13,7 +13,7 @@ def ellipse_tan_dot_derivative(rx, ry, px, py, theta):
 
 
 class Collide2DPoly(object):
-    ''' Collide2DPoly checks whether a point is within a polygon defined by a
+    """Collide2DPoly checks whether a point is within a polygon defined by a
     list of corner points.
 
     Based on http://alienryderflex.com/polygon/
@@ -33,7 +33,8 @@ class Collide2DPoly(object):
     The x, and y values must be floating points.
     The cache argument, if True, will calculate membership for all the points
     so when collide_point is called it'll just be a table lookup.
-    '''
+
+    """
     __slots__ = ['points', 'count', 'constant', 'multiple',
                  'min_x', 'max_x', 'min_y', 'max_y',
                  'width', 'space']
