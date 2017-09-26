@@ -33,9 +33,6 @@ class Collide2DPoly(object):
     The x, and y values must be floating points.
     The cache argument, if True, will calculate membership for all the points
     so when collide_point is called it'll just be a table lookup.
-
-    This pure Python version was ported from the kivy.garden.collider
-    package.
     '''
     __slots__ = ['points', 'count', 'constant', 'multiple',
                  'min_x', 'max_x', 'min_y', 'max_y',
